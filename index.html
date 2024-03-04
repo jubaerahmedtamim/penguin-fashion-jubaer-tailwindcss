@@ -23,17 +23,21 @@
 
 <body>
     <header class="bg-[#FFFBF0]">
-        <div class="max-w-7xl py-16 mx-auto">
-            <nav class=" flex justify-between items-center ">
-                <img class="w-96 " src="./icons/logo.png" alt="">
-                <div class="font-semibold ">
+        <div class="p-2 md:max-w-7xl md:py-16 mx-auto">
+            <nav class="flex justify-between items-center ">
+                <img class="w-44 md:w-96  " src="./icons/logo.png" alt="">
+                <div class=" invisible md:visible   font-semibold ">
                     <a class="me-16" href="">Home</a>
                     <a class="me-16" href="">Products</a>
                     <a class="me-16" href="">Contact us</a>
                     <a class="me-16" href="">About us</a>
                 </div>
+                <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-14 h-14 md:invisible">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                  </svg>
+                   
             </nav>
-            <section class="banner flex justify-between items-center">
+            <section class="banner flex flex-col space-y-11 md:flex-row md:space-x-36 items-center">
                 <div class="">
                     <h1 class="text-7xl uppercase font-semibold mb-2 font-bebas"><span class="text-[#FABE4C]">Be the
                             Penguins</span>
@@ -52,8 +56,8 @@
     </header>
     <main class="max-w-7xl py-16 mx-auto">
         <section class="woman-jacket pb-5">
-            <h2 class="uppercase font-bebas text-5xl ">Woman Jacket</h2>
-            <div class="cards flex gap-8">
+            <h2 class="uppercase font-bebas text-5xl ">Woman Jackets</h2>
+            <div class="cards flex flex-col md:flex-row gap-8">
                 <div class="card space-y-3 bg-[#FFF] rounded-3xl shadow-lg p-5">
                     <img class="bg-[#F1F1F1] rounded-3xl p-6" src="./images/jacket-1.png" alt="">
                     <h3 class="text-2xl font-bold">Yellow Coat Jacket </h3>
@@ -91,6 +95,79 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- Man jacket section -->
+        <section class="woman-jacket pb-5 md:mb-32">
+            <h2 class="uppercase font-bebas text-5xl ">Man Jackets</h2>
+            <div class="cards flex flex-col md:flex-row gap-8">
+                <div class="card space-y-3 bg-[#FFF] rounded-3xl shadow-lg p-5">
+                    <img class="bg-[#F1F1F1] rounded-3xl p-6" src="./images/jacket-4.png" alt="">
+                    <h3 class="text-2xl font-bold">Snowboard Jacket Mens </h3>
+                    <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h4 class="text-[#FABE4C] text-4xl font-black">$234</h4>
+                        <button
+                        class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] uppercase text-white py-3 px-7 text-lg font-semibold rounded">
+                        <i class="fa fa-regular fa-cart-plus"></i> Buy now</button>
+                    </div>
+                </div>
+                <div class="card space-y-3 bg-[#FFF] rounded-3xl shadow-lg p-5">
+                    <img class="bg-[#F1F1F1] rounded-3xl p-6" src="./images/jacket-5.png" alt="">
+                    <h3 class="text-2xl font-bold">Man Leather Jackets</h3>
+                    <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h4 class="text-[#FABE4C] text-4xl font-black">$234</h4>
+                        <button
+                        class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] uppercase text-white py-3 px-7 text-lg font-semibold rounded">
+                        <i class="fa fa-regular fa-cart-plus"></i> Buy now</button>
+                    </div>
+                </div>
+                <div class="card space-y-3 bg-[#FFF] rounded-3xl shadow-lg p-5">
+                    <img class="bg-[#F1F1F1] rounded-3xl p-6" src="./images/jacket-6.png" alt="">
+                    <h3 class="text-2xl font-bold">Man Casual Jackets</h3>
+                    <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h4 class="text-[#FABE4C] text-4xl font-black">$234</h4>
+                        <button
+                        class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] uppercase text-white py-3 px-7 text-lg font-semibold rounded">
+                        <i class="fa fa-regular fa-cart-plus"></i> Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section  -->
+        <section class="flex flex-col-reverse p-2  md:flex-row  md:gap-24 items-center">
+            <div>
+                <div class="flex flex-col text-center md:text-left p-6 md:flex-row h-60 md:h-32 gap-8 items-center shadow-lg rounded-2xl mb-4">
+                    <img class="w-20  " src="./icons/box.png" alt="">
+                    <div class="">
+                        <h3 class="text-2xl font-bold">Find the Perfect Fit</h3>
+                        <p class="text-[#3E3E3E]">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col text-center md:text-left p-6 md:flex-row h-60 md:h-32 gap-8 items-center shadow-lg rounded-2xl mb-4">
+                    <img class="w-20" src="./icons/house.png" alt="">
+                    <div class="">
+                        <h3 class="text-2xl font-bold">Find the Perfect Fit</h3>
+                        <p class="text-[#3E3E3E]">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col text-center md:text-left p-6 md:flex-row h-60 md:h-32 gap-8 items-center shadow-lg rounded-2xl mb-4">
+                    <img class="w-20" src="./icons/question.png" alt="">
+                    <div class="">
+                        <h3 class="text-2xl font-bold">Find the Perfect Fit</h3>
+                        <p class="text-[#3E3E3E]">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+            </div>
+            <img class="md:w-1/2 " src="./images/shopping.png" alt="">
         </section>
     </main>
 </body>
